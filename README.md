@@ -16,5 +16,10 @@ npm run pack:linux
 
 # open:
 
-open dist/osx/Braid-darwin-x64/Braid.app
+OS X:
 
+`open dist/osx/Rookie\ Coach-darwin-x64/Rookie\ Coach.app`
+
+or, on linux
+
+`./dist/linux/Rookie\ Coach-linux-x64/Rookie\ Coach`

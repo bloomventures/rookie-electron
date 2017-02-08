@@ -1,0 +1,21 @@
+{
+  "name": "Rookie Coach",
+  "version": "1.0.0",
+  "description": "Rookie Coach site, package with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+
+    "clean": "rm -rf ./dist",
+    "clean:osx": "rm -rf ./dist/osx",
+    "clean:win": "rm -rf ./dist/win",
+
+    "pack": "npm run clean && npm run pack:osx && npm run pack:win",
+    "pack:osx": "npm run clean:osx && electron-packager . \"Rookie Coach\" --out=\"dist/osx\" --platform=darwin --arch=x64 --version=1.2.2 --icon=assets/osx/rookie.icns",
+    "pack:win": "npm run clean:win && electron-packager . \"Rookie Coach\" --out=\"dist/win\" --platform=win32 --arch=ia32 --version=1.2.2 --icon=assets/win/rookie.ico"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.5.1",
+    "electron-prebuilt": "^1.2.2"
+  }
+}

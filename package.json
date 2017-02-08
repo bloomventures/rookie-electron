@@ -13,6 +13,7 @@
     "pack": "npm run clean && npm run pack:osx && npm run pack:win",
     "pack:osx": "npm run clean:osx && electron-packager . \"Rookie Coach\" --out=\"dist/osx\" --platform=darwin --arch=x64 --version=1.2.2 --icon=assets/osx/rookie.icns",
     "pack:win": "npm run clean:win && electron-packager . \"Rookie Coach\" --out=\"dist/win\" --platform=win32 --arch=ia32 --version=1.2.2 --icon=assets/win/rookie.ico"
+    "pack:linux": "npm run clean:linux && electron-packager . \"Rookie Coach\" --out=\"dist/linux\" --platform=linux --arch=ia32 --version=1.2.2 --icon=assets/linux/rookie.png"
   },
   "devDependencies": {
     "electron-packager": "^8.5.1",

@@ -1,6 +1,6 @@
 {
   "name": "RookieCoach",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Rookie Coach site, package with Electron",
   "main": "main.js",
   "scripts": {
@@ -12,12 +12,12 @@
     "clean:linux": "rm -rf ./dist/linux",
 
     "pack": "npm run clean && npm run pack:osx && npm run pack:win && npm run pack:linux",
-    "pack:osx": "npm run clean:osx && electron-packager . \"Rookie Coach\" --out=\"dist/osx\" --platform=darwin --arch=x64 --electron-version=1.4.15 --icon=assets/osx/rookie.icns",
-    "pack:win": "npm run clean:win && electron-packager . \"Rookie Coach\" --out=\"dist/win\" --platform=win32 --arch=ia32 --electron-version=1.4.15 --icon=assets/win/rookie.ico",
-    "pack:linux": "npm run clean:linux && electron-packager . \"Rookie Coach\" --out=\"dist/linux\" --platform=linux --arch=x64 --electron-version=1.4.15 --icon=assets/linux/rookie.png"
+    "pack:osx": "npm run clean:osx && electron-packager . \"Rookie Coach\" --out=\"dist/osx\" --platform=darwin --arch=x64 --electron-version=1.6.2 --icon=assets/osx/rookie.icns",
+    "pack:win": "npm run clean:win && electron-packager . \"Rookie Coach\" --out=\"dist/win\" --platform=win32 --arch=ia32 --electron-version=1.6.2 --icon=assets/win/rookie.ico",
+    "pack:linux": "npm run clean:linux && electron-packager . \"Rookie Coach\" --out=\"dist/linux\" --platform=linux --arch=x64 --electron-version=1.6.2 --icon=assets/linux/rookie.png"
   },
   "devDependencies": {
     "electron-packager": "^8.5.1",
-    "electron": "^1.4.15"
+    "electron": "^1.6.2"
   }
 }
